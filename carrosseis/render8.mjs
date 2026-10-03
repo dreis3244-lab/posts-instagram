@@ -6,7 +6,8 @@ const slides = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const out = process.argv[3];
 const P = JSON.parse(fs.readFileSync('perfil.json', 'utf8'));
 fs.mkdirSync(out, { recursive: true });
-const b64 = (f, t) => `data:${t};base64,${fs.readFileSync(path.resolve(f)).toString('base64')}`;
+const MIME = { '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg' };
+const b64 = (f, t) => `data:${MIME[path.extname(f).toLowerCase()] || t};base64,${fs.readFileSync(path.resolve(f)).toString('base64')}`;
 const font = f => b64(path.join('fontes', f), 'font/ttf');
 const AV = b64('fotos/avatar-ref.jpg', 'image/jpeg');
 const hl = t => t.replace(/\*\*(.+?)\*\*/g, '<mark>$1</mark>');
@@ -18,7 +19,7 @@ const CSS = `
 :root{--ink:#0F1B33;--gold:#B7791F;--hi:#FDE9A8;--btn:#FFD65C}
 *{margin:0;box-sizing:border-box}
 body{width:1080px;height:1350px;overflow:hidden;background:#fff;color:var(--ink);font-family:P,sans-serif;position:relative}
-.head{position:absolute;top:44px;left:68px;right:72px;display:flex;align-items:center;gap:20px;z-index:5}
+.head{text-shadow:0 2px 12px rgba(0,0,0,.45);position:absolute;top:44px;left:68px;right:72px;display:flex;align-items:center;gap:20px;z-index:5}
 .av{width:124px;height:124px;border-radius:50%;overflow:hidden;position:relative;flex:none}
 .av img{position:absolute;left:-68px;top:-44px}
 .nm{font-weight:700;font-size:44px;line-height:1.1}.hd{font-size:34px;color:#6b7385;line-height:1.3}

@@ -1,0 +1,49 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "TikTok Shop",
+  "photo": "banco-de-imagens/tiktok/tiktok-2.webp",
+  "pos": "center 40%",
+  "title": "Vídeo ou **live**: por onde começar no TikTok Shop?",
+  "text": "Veja qual formato combina com você."
+ },
+ {
+  "type": "big",
+  "eyebrow": "Sem resposta única",
+  "title": "Os dois **funcionam**",
+  "text": "O melhor formato é o que você consegue manter com constância e qualidade."
+ },
+ {
+  "type": "list",
+  "eyebrow": "Compare",
+  "title": "Pense em **3 pontos**",
+  "items": [
+   "Tempo: quanto você tem por semana",
+   "Conforto: você prefere gravar ou falar ao vivo",
+   "Produto: ele fica melhor demonstrado em vídeo ou em live"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "Dica",
+  "title": "Teste um **formato** por vez",
+  "text": "Escolha um, publique por duas semanas e veja os resultados antes de mudar."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "Você começa por **qual**?",
+  "options": [
+   "Vídeo",
+   "Live"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-2.jpg",
+  "pos": "center 30%",
+  "title": "Quer aprender a vender em **live**?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "LIVESHOP"
+ }
+]

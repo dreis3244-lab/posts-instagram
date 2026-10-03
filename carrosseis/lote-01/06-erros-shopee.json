@@ -1,0 +1,50 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "Shopee",
+  "photo": "banco-de-imagens/shopee/shopee-2.webp",
+  "pos": "center 30%",
+  "title": "3 erros de quem começa a vender na **Shopee**",
+  "text": "Evite o que trava as primeiras vendas."
+ },
+ {
+  "type": "list",
+  "eyebrow": "Os erros",
+  "title": "Fuja desses **3 erros**",
+  "items": [
+   "Foto e título fracos no anúncio",
+   "Definir preço sem calcular taxas e frete",
+   "Ignorar avaliações e atendimento"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "Erro 2",
+  "title": "Preço sem **conta** vira prejuízo",
+  "text": "Antes de anunciar, some custo do produto, taxas da plataforma, frete e embalagem. Só então defina o preço."
+ },
+ {
+  "type": "big",
+  "eyebrow": "Erro 3",
+  "title": "Cliente **satisfeito** vende por você",
+  "text": "Responda rápido e cuide das avaliações. Elas ajudam o próximo cliente a decidir."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "Qual erro você **já** cometeu?",
+  "options": [
+   "Anúncio fraco",
+   "Preço sem conta",
+   "Pouco atendimento"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-1.jpg",
+  "pos": "center 28%",
+  "title": "Quer o passo a passo da **Shopee**?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "SHOPEE"
+ }
+]
