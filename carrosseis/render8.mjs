@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 const slides = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const out = process.argv[3];
-const P = JSON.parse(fs.readFileSync('perfil.json', 'utf8'));
+const P = JSON.parse(fs.readFileSync(process.env.PERFIL || 'perfil.json', 'utf8'));
 fs.mkdirSync(out, { recursive: true });
 const MIME = { '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg' };
 const b64 = (f, t) => `data:${MIME[path.extname(f).toLowerCase()] || t};base64,${fs.readFileSync(path.resolve(f)).toString('base64')}`;
