@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+import fs from 'fs';
+import path from 'path';
+const dir = process.argv[2];
+const files = fs.readdirSync(dir).filter(f => f.endsWith('.png') && f.startsWith('slide-')).sort();
+const imgs = files.map(f => `<img src="data:image/png;base64,${fs.readFileSync(path.join(dir, f)).toString('base64')}" style="width:480px;height:600px">`).join('');
+const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
+const pg = await b.newPage({ viewport: { width: 1440, height: 1200 } });
+await pg.setContent(`<body style="margin:0;background:#888;display:grid;grid-template-columns:repeat(3,480px);gap:0">${imgs}</body>`);
+await pg.screenshot({ path: path.join(dir, 'folha.png'), fullPage: true });
+await b.close();

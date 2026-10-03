@@ -1,0 +1,50 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "Inteligência artificial",
+  "photo": "banco-de-imagens/pessoal/foto-1.jpg",
+  "pos": "center 30%",
+  "title": "Como usar **IA** para criar posts todo dia",
+  "text": "Sem perder o seu jeito de falar."
+ },
+ {
+  "type": "big",
+  "eyebrow": "A ideia",
+  "title": "IA é **assistente**, não substituta",
+  "text": "Ela acelera o trabalho. A sua opinião e a sua experiência continuam sendo o que faz o post ser seu."
+ },
+ {
+  "type": "list",
+  "eyebrow": "Passo a passo",
+  "title": "Use a IA em **3 etapas**",
+  "items": [
+   "Peça 10 ideias de tema para o seu público",
+   "Escolha 1 e peça um roteiro de slides",
+   "Revise o texto e coloque a sua voz"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "Cuidado",
+  "title": "Sempre **revise** antes de postar",
+  "text": "A IA pode errar dados e exagerar promessas. Confira os fatos e tire o que você não consegue comprovar."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "Você já usa **IA** para criar conteúdo?",
+  "options": [
+   "Uso sempre",
+   "Às vezes",
+   "Quero começar"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-2.jpg",
+  "pos": "center 30%",
+  "title": "Quer aprender a usar **IA** comigo?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "IA"
+ }
+]

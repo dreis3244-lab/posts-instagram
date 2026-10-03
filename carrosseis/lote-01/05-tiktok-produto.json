@@ -1,0 +1,50 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "TikTok Shop",
+  "photo": "banco-de-imagens/pessoal/foto-3.jpg",
+  "pos": "center 30%",
+  "title": "3 perguntas antes de escolher um **produto**",
+  "text": "Para não vender no escuro."
+ },
+ {
+  "type": "big",
+  "eyebrow": "Comece por aqui",
+  "title": "Produto bom não é o que **você** gosta",
+  "text": "É o que o seu público quer comprar e que dá margem para você trabalhar."
+ },
+ {
+  "type": "list",
+  "eyebrow": "As perguntas",
+  "title": "Pergunte **antes**",
+  "items": [
+   "Meu público já procura esse tipo de produto?",
+   "Sobra margem depois das taxas e do frete?",
+   "Consigo mostrar o produto em vídeo ou live?"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "Teste",
+  "title": "Comece **pequeno**",
+  "text": "Teste poucos produtos por alguns dias, compare os resultados e só então aposte mais nos que funcionam."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "Qual pergunta você mais **esquece**?",
+  "options": [
+   "O público",
+   "A margem",
+   "O vídeo"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-5.jpg",
+  "pos": "center 28%",
+  "title": "Quer a lista de **produtos** para testar?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "PRODUTO"
+ }
+]

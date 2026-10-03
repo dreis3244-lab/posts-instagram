@@ -1,0 +1,53 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "IA na sua loja",
+  "photo": "banco-de-imagens/pessoal/foto-4.jpg",
+  "pos": "center 35%",
+  "title": "5 tarefas da loja que a **IA** faz por você",
+  "text": "Ganhe tempo para o que importa."
+ },
+ {
+  "type": "list",
+  "eyebrow": "Tarefas 1 a 3",
+  "title": "Comece por **estas**",
+  "items": [
+   "Escrever títulos e descrições de produto",
+   "Responder perguntas frequentes de clientes",
+   "Criar ideias de conteúdo para o Instagram"
+  ]
+ },
+ {
+  "type": "list",
+  "eyebrow": "Tarefas 4 e 5",
+  "title": "E também **estas**",
+  "items": [
+   "Resumir avaliações para achar pontos de melhoria",
+   "Montar roteiros curtos de vídeo e de live"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "Regra de ouro",
+  "title": "Você **decide**, a IA ajuda",
+  "text": "Revise tudo antes de publicar. Preço, prazo e promessa precisam ser verdadeiros."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "Qual tarefa você **mais** quer automatizar?",
+  "options": [
+   "Descrições",
+   "Atendimento",
+   "Conteúdo"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-5.jpg",
+  "pos": "center 28%",
+  "title": "Quer o guia de **IA** para lojas?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "LOJA"
+ }
+]

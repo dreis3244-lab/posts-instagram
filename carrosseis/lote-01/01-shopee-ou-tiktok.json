@@ -1,0 +1,49 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "Afiliado",
+  "photo": "banco-de-imagens/pessoal/foto-5.jpg",
+  "pos": "center 28%",
+  "title": "Shopee ou **TikTok Shop**? Qual combina com você?",
+  "text": "3 critérios para decidir sem chute."
+ },
+ {
+  "type": "big",
+  "eyebrow": "Antes de tudo",
+  "title": "Não existe a **melhor** plataforma",
+  "text": "Existe a melhor para o seu perfil, o seu público e o seu momento."
+ },
+ {
+  "type": "list",
+  "eyebrow": "Os critérios",
+  "title": "Decida por **3 critérios**",
+  "items": [
+   "Comissão: confira a tabela atual de cada plataforma",
+   "Público: onde as pessoas já compram com você",
+   "Prazo: quando o dinheiro cai na sua conta"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "O erro comum",
+  "title": "Escolher pelo **hype**",
+  "text": "O que bomba no feed do outro pode não funcionar no seu. Teste os dois por 7 dias e compare."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "Em qual você **comprou** por último?",
+  "options": [
+   "Shopee",
+   "TikTok Shop"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-1.jpg",
+  "pos": "center 28%",
+  "title": "Quer o passo a passo de **afiliado**?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "AFILIADO"
+ }
+]

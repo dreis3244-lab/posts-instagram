@@ -1,0 +1,50 @@
+[
+ {
+  "type": "cover",
+  "eyebrow": "Instagram",
+  "photo": "banco-de-imagens/pessoal/foto-2.jpg",
+  "pos": "center 30%",
+  "title": "3 coisas que fazem seu carrossel ser **salvo**",
+  "text": "Salvamentos mostram que o conteúdo foi útil."
+ },
+ {
+  "type": "big",
+  "eyebrow": "Por que importa",
+  "title": "Quem **salva**, volta",
+  "text": "Um post que as pessoas guardam para consultar depois costuma ser um conteúdo realmente útil."
+ },
+ {
+  "type": "list",
+  "eyebrow": "As 3 coisas",
+  "title": "Faça seu post **valer** salvar",
+  "items": [
+   "Capa com uma promessa clara",
+   "Passo a passo que a pessoa possa seguir",
+   "Uma checklist no final para guardar"
+  ]
+ },
+ {
+  "type": "big",
+  "eyebrow": "Dica extra",
+  "title": "Um post, **uma** ideia",
+  "text": "Quando o carrossel tenta falar de tudo, ninguém lembra de nada. Foque em um tema só."
+ },
+ {
+  "type": "ask",
+  "eyebrow": "Interaja",
+  "title": "O que você **mais** salva no Instagram?",
+  "options": [
+   "Receitas e dicas",
+   "Vendas e negócios",
+   "Treino e saúde"
+  ]
+ },
+ {
+  "type": "cta",
+  "photo": "banco-de-imagens/pessoal/foto-1.jpg",
+  "pos": "center 28%",
+  "title": "Quer mais **dicas** assim?",
+  "text": "Comente a palavra abaixo e eu te chamo no direct.",
+  "keyword": "CARROSSEL"
+ }
+]
