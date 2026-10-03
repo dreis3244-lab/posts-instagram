@@ -1,0 +1,35 @@
+[
+ {
+  "type": "cover-photo",
+  "page": 0,
+  "total": 5,
+  "photo": "fotos/foto-1.jpg",
+  "chip": "Afiliado",
+  "title": "Shopee ou **TikTok Shop**?",
+  "text": "3 critérios para decidir sem chute."
+ },
+ {
+  "type": "cover-shopee",
+  "page": 0,
+  "total": 5,
+  "chip": "Shopee",
+  "title": "Como começar na **Shopee** do zero?",
+  "text": "O passo a passo que quase ninguém organiza."
+ },
+ {
+  "type": "cover-tiktok",
+  "page": 0,
+  "total": 5,
+  "chip": "TikTok Shop",
+  "title": "O que está **bombando** no TikTok Shop?",
+  "text": "Veja o que olhar antes de escolher um produto."
+ },
+ {
+  "type": "cover-ia",
+  "page": 0,
+  "total": 5,
+  "chip": "Inteligência artificial",
+  "title": "Como usar **IA** nos seus posts?",
+  "text": "Dá para ganhar tempo sem perder o seu jeito."
+ }
+]
