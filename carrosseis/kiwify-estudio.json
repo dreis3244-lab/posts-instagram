@@ -1,0 +1,30 @@
+[
+ {
+  "photo": "fotos/foto-1.jpg",
+  "pos": "center 30%",
+  "big": false,
+  "title": "Fui parar num <em>estúdio</em> que poucos vendedores conhecem",
+  "text": "E voltei com um recado."
+ },
+ {
+  "title": "O recado: <em>constância</em> vence talento",
+  "text": "Quem aparece, testa e melhora todo dia passa na frente de quem espera o momento perfeito."
+ },
+ {
+  "photo": "fotos/foto-4.jpg",
+  "pos": "center 40%",
+  "title": "Conversa boa <em>vira</em> ideia de venda",
+  "text": "Quase tudo que funciona nos anúncios nasce de trocar experiência com quem já testou."
+ },
+ {
+  "title": "E você? Está <em>testando</em> ou só esperando?",
+  "text": "Salva este post e manda para um amigo que vende online."
+ },
+ {
+  "photo": "fotos/foto-2.jpg",
+  "pos": "center 35%",
+  "big": false,
+  "title": "Quer o próximo bastidor? <em>Comenta EU QUERO</em>",
+  "foot": "@diegoreisads"
+ }
+]
