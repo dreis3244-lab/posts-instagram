@@ -2,7 +2,7 @@
  {
   "type": "cover",
   "eyebrow": "Inteligência artificial",
-  "photo": "banco-de-imagens/pessoal/foto-1.jpg",
+  "photo": "banco-de-imagens/pessoal/palestra-5.jpg",
   "pos": "center 30%",
   "title": "Como usar **IA** para criar posts todo dia",
   "text": "Sem perder o seu jeito de falar."
@@ -41,8 +41,8 @@
  },
  {
   "type": "cta",
-  "photo": "banco-de-imagens/pessoal/foto-2.jpg",
-  "pos": "center 30%",
+  "photo": "banco-de-imagens/pessoal/palestra-2.jpg",
+  "pos": "center 28%",
   "title": "Quer aprender a usar **IA** comigo?",
   "text": "Comente a palavra abaixo e eu te chamo no direct.",
   "keyword": "IA"
