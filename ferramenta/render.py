@@ -22,7 +22,7 @@ BADGE={'minha-historia':'+20 MIL|ALUNOS','por-que-ensino-live':'+20 MIL|ALUNOS',
 im0=Image.open(''+UP+'007e7f9b-image.jpg').convert('RGB').crop((300,270,650,620)).resize((400,400));bb=io.BytesIO();im0.save(bb,'JPEG',quality=92);AV='data:image/jpeg;base64,'+base64.b64encode(bb.getvalue()).decode()
 
 PORT=[j for j,p in enumerate(POOL) if p not in ('80bd0a6c','56f1beea') and (lambda im:im.size[1]/im.size[0]>=1.3)(Image.open(UP+p+'-image.jpg'))]
-ST={'a':0,'p':0,'K':-1}
+ST={'a':0,'p':0,'K':-1};STYLE=None
 def nxt(port):
     if port:
         v=PORT[ST['p']%len(PORT)];ST['p']+=3;return v
@@ -40,6 +40,10 @@ def brands_for(slug):
     if slug.startswith('ia-') or slug.startswith('5-prompts') or 'novidade-ia' in slug or '-ia-' in slug:b.append('ia')
     return b[:2]
 def INFO(K,i,N,slug):
+    if STYLE=='cri':
+        if i==N-1:return {'mode':'full','photos':[nxt(True)],'tags':tags_for(slug),'brands':brands_for(slug)}
+        if i==0:return {'mode':'cri','photos':[-1],'tags':tags_for(slug),'brands':brands_for(slug)}
+        return {'mode':'cri','photos':[-1],'tags':[]}
     full=(i==0 and K%2==0) or (i==N-1)
     if full:return {'mode':'full','photos':[nxt(True)],'tags':tags_for(slug),'brands':brands_for(slug)}
     if i==0:return {'mode':'clean','photos':[nxt(False)],'tags':tags_for(slug),'brands':brands_for(slug)}
@@ -64,7 +68,7 @@ with sync_playwright() as p:
     for j in jobs:
         K+=1;slug=j['slug']
         if only and slug not in only:continue
-        slides=sub(j['slides']);N=len(slides);cap=sub(j['cap'])
+        STYLE=j.get('style');slides=sub(j['slides']);N=len(slides);cap=sub(j['cap'])
         folder=f"{outroot}/{j['d']+'/' if j.get('d') else ''}{j['n']}-{slug}";os.makedirs(folder,exist_ok=True)
         for i,s in enumerate(slides):
             dd=pg.evaluate("""async([s,i,n,info])=>{const c=document.getElementById('c');await drawSlide(c,s,i,n,info);return c.toDataURL('image/jpeg',0.93)}""",[s,i,N,INFO(K,i,N,slug)])
