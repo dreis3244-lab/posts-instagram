@@ -40,6 +40,13 @@ def brands_for(slug):
     if slug.startswith('ia-') or slug.startswith('5-prompts') or 'novidade-ia' in slug or '-ia-' in slug:b.append('ia')
     return b[:2]
 def INFO(K,i,N,slug):
+    if STYLE=='foto':
+        if i==0 or i==N-1:ph=PORT[(K*3+(0 if i==0 else 5))%len(PORT)]
+        else:
+            ph=(K*5+i*7)%L
+            if ph==ST.get('prev'):ph=(ph+1)%L
+        ST['prev']=ph
+        return {'mode':'foto','photos':[ph],'tags':tags_for(slug),'brands':brands_for(slug)}
     if STYLE=='cri':
         if i==N-1:return {'mode':'full','photos':[nxt(True)],'tags':tags_for(slug),'brands':brands_for(slug)}
         if i==0:return {'mode':'cri','photos':[-1],'tags':tags_for(slug),'brands':brands_for(slug)}

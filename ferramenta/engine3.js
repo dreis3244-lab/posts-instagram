@@ -75,9 +75,24 @@ function ctaBtn(c,x,y,word,onDark){const a='Comente ';c.font=`500 34px ${F}`;con
   c.fillStyle=onDark?'#ffd257':INK;rr(c,x,y,w,h,h/2);c.fill();c.fillStyle=onDark?INK:'#fff';c.textBaseline='middle';c.font=`500 34px ${F}`;c.fillText(a,x+40,y+h/2+2);c.fillStyle=onDark?INK:'#ffd257';c.font=`700 34px ${F}`;c.fillText(word.toUpperCase(),x+40+w1,y+h/2+2);
   c.fillStyle=onDark?INK:'#fff';c.font=`500 38px ${F}`;c.fillText('→',x+w-70,y+h/2+1);c.textBaseline='alphabetic';return h}
 function bigStat(t){if(!t.startsWith('*'))return null;const m=/^\*([+\-]?\d[\d.,]*)\s*(vezes|mil|%)?\*\s*(.*)$/i.exec(t);if(!m)return null;const suf=(m[2]||'').toLowerCase();const big=suf==='vezes'?m[1]+'x':suf==='mil'?m[1]+' mil':suf==='%'?m[1]+'%':m[1];return {big,rest:m[3]}}
+
+// ===== modo foto (style:'foto'): foto do Diego em TODOS os slides, sem cortar as horizontais =====
+function drawFotoLand(c,sl,i,n,k,last,tags){
+  const im=IMGS[k];c.save();c.filter='blur(36px)';cover(c,im,-60,-60,W+120,H+120,50,30,1);c.restore();c.fillStyle='#0f172ab8';c.fillRect(0,0,W,H);
+  header(c,i,n,true);if(i===0){const bk=brandsOf(sl,window.CURINFO);brandChip(c,bk,W-M,188,112)}
+  const bx=containBox(im,W-2*M,560);const px=M+(W-2*M-bx.w)/2,py=236;c.save();rr(c,px,py,bx.w,bx.h,30);c.clip();c.drawImage(im,px,py,bx.w,bx.h);c.restore();
+  const maxW=W-2*M;const f=fit(c,sl.t||'',{max:last?70:76,min:50,wt:600,maxW,maxLines:3});
+  const bl=sl.b?wrap(c,sl.b,`400 34px ${F}`,maxW).slice(0,2):[];
+  const th=f.L.length*f.s*1.24,bh=bl.length*48,ch=sl.follow?96:0;const total=(sl.k?44:0)+th+(bl.length?bh+16:0)+ch;
+  let y=Math.max(py+bx.h+30,H-130-total);if(sl.k){c.fillStyle='#ffd257';c.font=`600 25px ${F}`;c.letterSpacing='4px';c.fillText(sl.k.toUpperCase(),M,y+26);c.letterSpacing='0px';y+=44}
+  y=drawRich(c,f,M,y,1.24,'#ffffff')+8;
+  if(bl.length){c.fillStyle='#ffffffdd';c.font=`400 34px ${F}`;for(const ln of bl){c.fillText(ln,M,y+32);y+=48}y+=10}
+  if(sl.follow){y+=14;engageRow(c,M,y,true)}
+  footer(c,i,n,true)}
 window.drawSlide=async function(canvas,sl,i,n,info){
   window.CURINFO=info;canvas.width=W;canvas.height=H;const c=canvas.getContext('2d');c.fillStyle='#ffffff';c.fillRect(0,0,W,H);c.textBaseline='alphabetic';
   const last0=i===n-1,isCover0=i===0;const P=info.photos||[];
+  if(info.mode==='foto'){if(fullOK(P[0]))drawFull(c,sl,i,n,P[0],last0,info.tags);else drawFotoLand(c,sl,i,n,P[0],last0,info.tags);return}
   if((isCover0||last0)&&info.mode==='full'&&fullOK(P[0])){drawFull(c,sl,i,n,P[0],last0,info.tags);return}
   if(info.mode==='cri'&&isCover0){drawCriCover(c,sl,i,n,info);return}
   header(c,i,n);if(i>0){const bk=brandsOf(sl,null);brandChip(c,bk,W-M,146,100)}const last=i===n-1,isCover=i===0;const bottom=H-150-(sl.src?34:0);
