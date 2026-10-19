@@ -41,11 +41,12 @@ function drawFull(c,sl,i,n,k,last,tags){cover(c,IMGS[k],0,0,W,H,50,6,1);
   const maxW=W-2*M;const f=fit(c,sl.t||'',{max:last?80:88,min:56,wt:500,maxW,maxLines:4});
   const bl=sl.b?wrap(c,sl.b,`400 36px ${F}`,maxW).slice(0,3):[];
   const th=f.L.length*f.s*1.26,bh=bl.length*50,ch=(sl.cta?130:0)+(sl.follow?96:0);const total=(sl.k?44:0)+th+(bl.length?bh+20:0)+ch;
-  let y=H-150-total;if(sl.k){c.fillStyle='#ffd257';c.font=`600 25px ${F}`;c.letterSpacing='4px';c.fillText(sl.k.toUpperCase(),M,y+26);c.letterSpacing='0px';y+=44}
+  let y=H-150-(sl.src?36:0)-total;if(sl.k){c.fillStyle='#ffd257';c.font=`600 25px ${F}`;c.letterSpacing='4px';c.fillText(sl.k.toUpperCase(),M,y+26);c.letterSpacing='0px';y+=44}
   y=drawRich(c,f,M,y,1.26,'#ffffff')+8;
   if(bl.length){c.fillStyle='#ffffffdd';c.font=`400 36px ${F}`;for(const ln of bl){c.fillText(ln,M,y+34);y+=50}y+=10}
   if(sl.cta){y+=14;y+=ctaBtn(c,M,y,sl.cta,true)}
   if(sl.follow){y+=18;engageRow(c,M,y,true)}
+  if(sl.src){c.fillStyle='#ffffffb3';c.font=`400 24px ${F}`;c.fillText(sl.src,M,H-112)}
   footer(c,i,n,true)}
 
 
@@ -84,10 +85,11 @@ function drawFotoLand(c,sl,i,n,k,last,tags){
   const maxW=W-2*M;const f=fit(c,sl.t||'',{max:last?70:76,min:50,wt:600,maxW,maxLines:3});
   const bl=sl.b?wrap(c,sl.b,`400 34px ${F}`,maxW).slice(0,2):[];
   const th=f.L.length*f.s*1.24,bh=bl.length*48,ch=sl.follow?96:0;const total=(sl.k?44:0)+th+(bl.length?bh+16:0)+ch;
-  let y=Math.max(py+bx.h+30,H-130-total);if(sl.k){c.fillStyle='#ffd257';c.font=`600 25px ${F}`;c.letterSpacing='4px';c.fillText(sl.k.toUpperCase(),M,y+26);c.letterSpacing='0px';y+=44}
+  let y=Math.max(py+bx.h+30,H-160-total);if(sl.k){c.fillStyle='#ffd257';c.font=`600 25px ${F}`;c.letterSpacing='4px';c.fillText(sl.k.toUpperCase(),M,y+26);c.letterSpacing='0px';y+=44}
   y=drawRich(c,f,M,y,1.24,'#ffffff')+8;
   if(bl.length){c.fillStyle='#ffffffdd';c.font=`400 34px ${F}`;for(const ln of bl){c.fillText(ln,M,y+32);y+=48}y+=10}
   if(sl.follow){y+=14;engageRow(c,M,y,true)}
+  if(sl.src){c.fillStyle='#ffffffb3';c.font=`400 24px ${F}`;c.fillText(sl.src,M,H-112)}
   footer(c,i,n,true)}
 window.drawSlide=async function(canvas,sl,i,n,info){
   window.CURINFO=info;canvas.width=W;canvas.height=H;const c=canvas.getContext('2d');c.fillStyle='#ffffff';c.fillRect(0,0,W,H);c.textBaseline='alphabetic';
