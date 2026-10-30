@@ -162,7 +162,7 @@ add('23','1400',steps('ia-roteiro-de-demonstracao-em-30-segundos','IA para vende
 add('23','1900',quiz('quiz-primeiro-passo-da-oferta','Qual é o ^primeiro passo^ de uma oferta?','Antes de gravar, postar ou divulgar.',
  ['Escolher o desconto','Calcular o preço mínimo','Gravar o vídeo','Postar nos stories'],'Calcular o *preço mínimo*','Com custo, taxas e frete na conta, você descobre até onde pode baixar o preço sem ter prejuízo.',
  'O preço mínimo *define* o desconto','Só depois de saber o piso vale escolher o desconto, o prazo e a divulgação.',
- 'Quiz: qual é o primeiro passo de uma oferta? Resposta: calcular o preço mínimo. Comente a letra que você marcou.'))
+ 'Quiz: qual é o primeiro passo de uma oferta, antes de gravar, postar ou divulgar? Comente a letra que você marcou.'))
 add('23','2100',lst('custos-que-ficam-fora-da-conta','Para guardar','Custos que ficam ^fora da conta^',
  ['Embalagem: caixa, fita e proteção','Troca ou devolução','Brindes e cupons que você oferece','O seu tempo de atendimento'],
  'Quatro custos que muita gente esquece ao calcular o preço. Salve e revise a conta antes da Black Friday.','Salve para ^revisar^ a conta','E me conta qual custo você tinha esquecido.',cb='Antes de definir o preço',tip=('Dica','Conte *tudo*, mesmo o pequeno','Custos pequenos somados podem comer a margem de uma oferta.')))
