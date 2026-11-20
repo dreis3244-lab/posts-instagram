@@ -1,0 +1,13 @@
+O TikTok lançou hoje uma ferramenta para descobrir se um vídeo ou foto foi feito com IA.
+
+Como usar:
+1. Olhe o rótulo de IA no vídeo
+2. Use a Detecção de IA, no Centro de Transparência (funciona até sem conta)
+3. Ela lê metadados C2PA e uma marca-d'água invisível
+4. Criadores elegíveis podem ativar o Likeness Detection para proteger a própria imagem
+
+Sem sinal digital, não é garantia de que o vídeo é real. Use como mais uma checagem.
+
+Você ia usar? Comenta aqui.
+
+#inteligenciaartificial #tiktok #ia #criadoresdeconteudo
